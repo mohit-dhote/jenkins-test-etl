@@ -1,3 +1,23 @@
-code yet to be commited
+#testing jenkins repo for pipeline -- ignore
 
--- testing jenkins repo for pipeline -- ignore
+pipeline {
+    agent any // Runs on any available Jenkins agent
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building your application...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running automated tests...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to production...'
+            }
+        }
+    }
+}
+
